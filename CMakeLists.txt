@@ -4,6 +4,8 @@ project(LearnCuda LANGUAGES C CXX CUDA)
 
 cmake_policy(SET CMP0104 NEW)
 
+find_package(CUDA REQUIRED)
+
 if(NOT DEFINED CMAKE_CUDA_ARCHITECTURES)
   set(CMAKE_CUDA_ARCHITECTURES native)
 endif()
